@@ -1,0 +1,7 @@
+{
+    "mongoConfig": {
+      "serverUrl": "mongodb+srv://howard:hoho112@cluster0-gfp96.mongodb.net/test?retryWrites=true&w=majority",
+      "database": "BuildforCOVID19"
+    }
+  }
+  

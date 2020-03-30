@@ -1,0 +1,153 @@
+.homeContainer{
+    display: flex;
+    flex-direction: row;
+    .map{
+        width:calc(100% - 840px);
+       
+        position: fixed;
+        // top:150;
+        right:0;
+    }
+    .orderList{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .orders{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0em 1em;
+            width: 100%;
+            li{
+                list-style-type:none;
+            }
+            .order{
+                display: flex;
+                flex-direction: row;
+                height:350px;
+                width:100%;
+                background-color: #fff;
+                margin:1em 0em;
+                padding:1em;
+                box-sizing: border-box;
+                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                .upperdetail{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 100%;
+                    .orderDetail{
+                        text-align: left;
+                        .userInfo{
+                            display: flex;
+                            align-items: center;
+                            .detail{
+                                display: flex;
+                                justify-content: flex-start;
+                                flex-direction: column;
+                                text-align: left;
+                                .prodUsername{
+                                    font-size: 1.5rem;
+                                    font-weight: bold;
+                                }
+                                .prodTime{
+                                    font-size: .8rem;
+                                    color:rgb(160, 160, 160);
+                                }
+                                p{
+                                    margin: 0px;
+                                }
+                            }
+                            .profileImage{
+                                width:30px;
+                                height: 30px;
+                                margin-right: 10px;
+                            }
+                        }
+                        .tradeContent{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            img{
+                                width:30px;
+                            }
+                            .prodName{
+                                margin:0px;
+                                font-weight: bold;
+                            }
+                            .prodAmount{
+                                margin:0px;
+                                color:rgb(160, 160, 160);
+                            }
+                            .tradeRequest{
+                                width:35%;
+                            }
+                            .wishProd{
+                                width:35%;
+                            }
+                        }
+                       
+                        .prodDescription{
+                            text-align: left;
+                        }
+                    }
+                }
+                
+                .prodImage{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        width:280px;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+.tabPanel{
+    background-color: rgb(247, 247, 247);
+}
+.requestForm{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    .form-group{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1em 0em;
+    }
+    .extraContent{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    textarea[name="description"] {
+        border: none;
+        border-bottom: 1px solid rgb(157, 157, 157);
+        width:100%; 
+        height:50px;
+      }
+}
+.marker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    user-select: none;
+    transform: translate(-50%, -50%);
+    &:hover {
+      z-index: 1;
+    }
+  } 

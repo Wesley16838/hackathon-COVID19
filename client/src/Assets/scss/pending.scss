@@ -1,0 +1,153 @@
+.pendingOrderList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:920px;
+    margin: auto;
+    .pendingOrders{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0em 1em;
+        width: 100%;
+        li{
+            list-style-type:none;
+        }
+        .pendingOrder{
+            display: flex;
+            flex-direction: row;
+            height:350px;
+            width:100%;
+            background-color: #fff;
+            margin:1em 0em;
+            padding:1em;
+            box-sizing: border-box;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            .pendingDetail{
+                display: flex;
+                flex-direction: column;
+                width: 620px;///
+                .pendingTitle{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #000;
+                    .pendingStatus{
+                        font-weight: bold;
+                    }
+                    .pendingRoleBuyer{
+                        color:#C60000;
+                    }
+                    .pendingRoleSeller{
+                        color:#00B407;
+                    }
+                }
+                .pendingContent{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    text-align: left;
+                    height: 100%;
+                    .buyerInfo{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        height: 100%;                    
+                        p{
+                            margin: 0px;
+                        }
+                        .buyerDetail{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            img{
+                                width:50px;
+                                margin-right:10px;
+                            }
+                            p{
+                                font-weight: bold;
+                            }
+                        }
+                       
+                    }
+                    .redarrow{
+                        height:25px;
+                    }
+                    .sellerInfo{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        height: 100%;
+                    
+                        p{
+                            margin: 0px;
+                        }
+                        .sellerDetail{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            img{
+                                width:50px;
+                                margin-right:10px;
+                            }
+                            p{
+                                font-weight: bold;
+                            }
+                        }
+                       
+                    }
+                  
+                }
+                .pendingResult{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    .waiting{
+                        width:160px;
+                        padding:10px;
+                        background-color: #3B86FF;
+                        color: #fff;
+                    }
+                }
+            }
+            
+            .prodImage{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width:300px;///
+                img{
+                    width:280px;
+                }
+                
+            }
+        }
+    }
+}
+.roleTitle{
+    font-weight: bold;
+}
+.roleEmail{
+    color: rgb(125, 125, 125);
+}
+.cancelBtn{
+    background-color:#E84343 ;
+    padding:10px 50px;
+    color:#fff;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    &:hover{
+        background-color:rgb(185, 53, 53) ;
+    }
+}
+.acceptBtn{
+    background-color:#3B86FF ;
+    padding:10px 50px;
+    color:#fff;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    &:hover{
+        background-color:rgb(50, 108, 202) ;
+    }
+}

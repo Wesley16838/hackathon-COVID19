@@ -1,0 +1,110 @@
+.completedOrderList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:920px;
+    margin: auto;
+    .completedOrders{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0em 1em;
+        width: 100%;
+        li{
+            list-style-type:none;
+        }
+        .completedOrder{
+            display: flex;
+            flex-direction: row;
+            height:350px;
+            width:100%;
+            background-color: #fff;
+            margin:1em 0em;
+            padding:1em;
+            box-sizing: border-box;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            .completedDetail{
+                display: flex;
+                flex-direction: column;
+                width: 620px;///
+                .completedTitle{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #000;
+                    .completedStatus{
+                        font-weight: bold;
+                    }
+                    .completedRoleBuyer{
+                        color:#C60000;
+                    }
+                    .completedRoleSeller{
+                        color:#00B407;
+                    }
+                }
+                .completedContent{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    text-align: left;
+                    padding-top:10px;
+                    height: 100%;
+                    .buyer{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        img{
+                            width:50px;
+                            margin-right:10px;
+                        }
+                    }
+                    .completedMoreDetail{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        .roleAmt{
+                            color:rgb(125, 125, 125);
+                        }
+                        .buyerInfo{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            height: 100%;     
+                            width:35%;               
+                            p{
+                                margin: 0px;
+                            }             
+                        }
+                        .redarrow{
+                            height:25px;
+                        }
+                        .sellerInfo{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            height: 100%;
+                            width:35%;    
+                            p{
+                                margin: 0px;
+                            }                         
+                        }
+                    }
+                    
+                    
+                  
+                }
+            }
+            
+            .prodImage{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width:300px;///
+                img{
+                    width:280px;
+                }
+                
+            }
+        }
+    }
+}
